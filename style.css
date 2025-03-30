@@ -18,8 +18,263 @@ img {
 	max-width: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	font-family: var(--primary-font);
+	background-image: url(./images/bg-header-mobile.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.container {
+	margin: 5.6rem auto 2rem auto;
+	padding: 2.1rem;
+	padding-bottom: 8.6rem;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+header h1 {
+	padding-top: 4.2rem;
+	padding-bottom: 1.2rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--dark-grayish-blue);
+	letter-spacing: -1px;
+}
+
+header p {
+	color: var(--grayish-blue);
+	line-height: 1.6rem;
+	padding-bottom: 3rem;
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	width: 100%;
+}
+
+.btn:first-child {
+	background: var(--strong-cyan);
+	box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn:nth-child(2) {
+	background: var(--light-blue);
+	box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+	padding: 1rem 0;
+	width: 100%;
+	border-radius: 50px;
+	color: white;
+}
+
+.btn a {
+	color: white;
+	font-size: 1.1rem;
+}
+
+main {
+	padding-top: 10.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+main h2 {
+	color: var(--dark-grayish-blue);
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding-bottom: 1.2rem;
+}
+
+main p {
+	color: var(--grayish-blue);
+	line-height: 1.6;
+	padding-bottom: 4rem;
+}
+
+.main-content-container {
+	padding-top: 3.6rem;
+}
+
+.main-content-container h3 {
+	font-size: 1.4rem;
+	color: var(--dark-grayish-blue);
+	padding-bottom: 1rem;
+}
+
+.main-content-container p {
+	padding-bottom: 2.6rem;
+}
+
+.access {
+	padding-top: 9rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.access h2 {
+	font-size: 1.8rem;
+	color: var(--dark-grayish-blue);
+	font-weight: 600;
+	text-transform: capitalize;
+	padding-bottom: 1.2rem;
+}
+
+.access p {
+	color: var(--grayish-blue);
+	line-height: 1.6;
+	padding-bottom: 4rem;
+}
+
+.access img {
+	max-width: none;
+	width: 114%;
+	padding-bottom: 6.4rem;
+}
+
+.clients {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.clients h2 {
+	font-size: 1.8rem;
+	color: var(--dark-grayish-blue);
+	font-weight: 600;
+	padding-bottom: 0.8rem;
+}
+
+.clients p {
+	color: var(--grayish-blue);
+	line-height: 1.6;
+}
+
+.perks {
+	padding-top: 5.4rem;
+}
+
+.perks h3 {
+	padding-top: 2.4rem;
+	font-size: 1.4rem;
+	color: var(--dark-grayish-blue);
+	padding-bottom: 1.2rem;
+}
+
+.perks p {
+	padding-bottom: 3.8rem;
+}
+
+.clients-logo {
+	padding-top: 4.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3.6rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.clients-logo img {
+	scale: 0.8;
+}
+
+.downloads {
+	padding-top: 11rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.downloads h2 {
+	font-size: 1.8rem;
+	color: var(--dark-grayish-blue);
+	font-weight: 600;
+	padding-bottom: 1.2rem;
+}
+
+.downloads p {
+	color: var(--grayish-blue);
+	line-height: 1.6;
+	padding-bottom: 2.8rem;
+}
+
+footer {
+	background-color: #f4f4f4;
+	padding-top: 3rem;
+}
+
+.footer-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-container img {
+	width: 3.6rem;
+}
+
+.footer-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 3rem;
+	gap: 1.6rem;
+}
+
+.footer-grid h3 {
+	font-weight: 400;
+}
+
+.footer-grid h3 a {
+	color: var(--dark-grayish-blue);
+}
+
+.icon-container {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.icon-container img {
+	width: 1.6rem;
 }
