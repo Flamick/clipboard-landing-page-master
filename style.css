@@ -294,9 +294,43 @@ footer {
 		width: auto;
 		padding: 1rem 2rem;
 	}
+
+	.main-container img {
+		width: 90%;
+	}
+
+	.access img {
+		width: 90%;
+	}
+
+	.clients-logo {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		padding-left: 20%;
+	}
+
+	footer {
+		padding: 0;
+	}
+
+	.footer-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footer-grid {
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		align-items: center;
+		justify-self: flex-start;
+	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 	body {
 		background-image: url(./images/bg-header-desktop.png);
 	}
@@ -370,30 +404,15 @@ footer {
 	}
 
 	.clients-logo {
+		display: flex;
+		padding-left: 0;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;
 		width: 76vw;
 	}
 
 	.clients-logo img {
 		scale: 1;
-	}
-
-	footer {
-		padding: 0;
-	}
-
-	.footer-container {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-	.footer-grid {
-		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: center;
-		align-items: center;
-		justify-self: flex-start;
 	}
 }
