@@ -30,13 +30,14 @@ body {
 	background-image: url(./images/bg-header-mobile.png);
 	background-position: top right;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: contain;
 }
 
 .container {
-	margin: 5.6rem auto 2rem auto;
+	margin: 5.6rem auto 0 auto;
 	padding: 2.1rem;
 	padding-bottom: 8.6rem;
+	max-width: 700px;
 }
 
 header {
@@ -201,7 +202,6 @@ main p {
 	justify-content: center;
 	align-items: center;
 	gap: 3.6rem;
-	margin: 0 auto;
 	width: 100%;
 }
 
@@ -216,6 +216,7 @@ main p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	padding-bottom: 2rem;
 }
 
 .downloads h2 {
@@ -277,4 +278,122 @@ footer {
 
 .icon-container img {
 	width: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+	.container {
+		padding: 0;
+		margin: 7rem auto 0 auto;
+	}
+
+	.btn-container {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.btn {
+		width: auto;
+		padding: 1rem 2rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		background-image: url(./images/bg-header-desktop.png);
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	header h1 {
+		font-size: 2.8rem;
+	}
+
+	header p {
+		font-size: 1.2rem;
+	}
+
+	main h2,
+	.access h2,
+	.clients h2,
+	.downloads h2 {
+		font-size: 2.1rem;
+	}
+
+	.main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80vw;
+		gap: 7rem;
+		text-align: start;
+		transform: translateX(-15%);
+	}
+
+	.main-container img {
+		width: 70vw;
+	}
+
+	.main-content-container {
+		width: 36%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 2rem;
+	}
+
+	.access img {
+		width: 64vw;
+	}
+
+	.clients {
+		width: 100%;
+	}
+
+	.perks {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 1rem;
+		width: 76vw;
+	}
+
+	.perks div {
+		width: 33.33%;
+	}
+
+	.perk-img-container {
+		width: 40px;
+		height: 40px;
+		justify-self: center;
+	}
+
+	.clients-logo {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 76vw;
+	}
+
+	.clients-logo img {
+		scale: 1;
+	}
+
+	footer {
+		padding: 0;
+	}
+
+	.footer-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footer-grid {
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		align-items: center;
+		justify-self: flex-start;
+	}
 }
