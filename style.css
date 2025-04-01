@@ -399,6 +399,10 @@ footer {
 
 	.perks div {
 		width: 33.33%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.perk-img-container {
@@ -408,8 +412,6 @@ footer {
 		justify-content: center;
 		width: 100%;
 		height: 40px;
-		justify-self: center;
-		align-self: center;
 	}
 
 	.clients-logo {
